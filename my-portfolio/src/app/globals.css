@@ -26,10 +26,13 @@ body {
 
 body::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
+  border-radius: 10px;
 }
 
 body::-webkit-scrollbar-track {
   background: #2d3748; /* Track background color */
+  border-radius: 10px;
+
 }
 
 body::-webkit-scrollbar-thumb {
@@ -104,10 +107,14 @@ body::-webkit-scrollbar-thumb {
 
 .experience-container::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
+  border-radius: 10px;
+
 }
 
 .experience-container::-webkit-scrollbar-track {
   background: #2d3748; /* Track background color */
+  border-radius: 10px;
+
 }
 
 .experience-container::-webkit-scrollbar-thumb {
