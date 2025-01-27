@@ -44,12 +44,25 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.top-bar {
+/* .top-bar {
   display: flex;
   justify-content: end;
   gap: 20px;
   align-items: center;
   padding: 20px 40px;
+} */
+
+.top-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #0a0a0a;
+  border-bottom: 1px solid white;
 }
 
 
@@ -60,6 +73,7 @@ body::-webkit-scrollbar-thumb {
 
 
 .intro-container {
+  margin-top: 100px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
