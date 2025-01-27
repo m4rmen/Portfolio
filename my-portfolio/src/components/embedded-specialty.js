@@ -2,7 +2,13 @@ import React from 'react';
 
 
 export default function Embedded() {
-  return <h1>Embedded Systems Projects</h1>;
+    return (
+        <div>
+            <h1 className="speciality-title">Embedded Development Experience</h1>
+            
+    
+        </div>
+      ); 
 }
 
 

@@ -2,6 +2,12 @@ import React from "react";
 
 
 export default function Cyber() {
-  return <h1>Cybersecurity Projects</h1>;
+    return (
+        <div>
+            <h1 className="speciality-title">Cybersecurity Experience</h1>
+            
+    
+        </div>
+      ); 
 }
 
