@@ -44,13 +44,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-/* .top-bar {
-  display: flex;
-  justify-content: end;
-  gap: 20px;
-  align-items: center;
-  padding: 20px 40px;
-} */
 
 .top-bar {
   position: fixed;
@@ -93,6 +86,62 @@ body::-webkit-scrollbar-thumb {
   margin-right: 30px;
 }
 
+@media (max-width: 760px){
+  .profile-pic{
+    width: 125px;
+    height: 125px;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  .intro-text p {
+    font-size: 0.8rem;
+  }
+
+
+  .experience-container{
+    margin-left: 1%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+
+  .logo-placeholder{
+    justify-content: start;
+    height: 60px;
+  }
+
+  .logo-placeholder img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .experience-item{
+    margin-left: 1%;
+    margin-bottom: 5%;
+  }
+
+  .experience-footer button {
+    margin-top: 2%
+  }
+
+}
+
+
+@media (min-width: 769px){
+  .experience-item {
+    display: grid;
+    grid-template-columns: 1fr 11fr; /* Two columns: 1/4 for the logo, 3/4 for the details */
+    gap: 1.5rem; /* Space between the logo and details */
+    margin-bottom: 2%;
+  }
+}
+
 
 .specialty-container{
   display: flex;
@@ -108,19 +157,6 @@ body::-webkit-scrollbar-thumb {
   margin-left: 6% ;
   font-size: 1.5rem;
   font-weight: bold;
-}
-
-@media (max-width: 760px){
-  .experience-container{
-    margin-left: 4%;
-    margin-right: 4%;
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    height: 500px;
-    overflow-y: auto;
-    scroll-behavior: smooth;
-  }
 }
 
 .experience-container{
@@ -152,12 +188,7 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #2d3748; /* Padding around the thumb */
 }
 
-.experience-item {
-  display: grid;
-  grid-template-columns: 1fr 11fr; /* Two columns: 1/4 for the logo, 3/4 for the details */
-  gap: 1.5rem; /* Space between the logo and details */
-  margin-bottom: 5%;
-}
+
 
 
 /* .experience-item{
