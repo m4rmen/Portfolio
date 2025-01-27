@@ -11,7 +11,16 @@ export default function Home() {
 
   const [specialty, setSpecialty] = useState("");
 
+  const [interestsList, setInterestsList] = useState([]); // Local interestsList
 
+  // Function to toggle an interest
+  const toggleInterest = (interest) => {
+    setInterestsList((prev) =>
+      prev.includes(interest)
+        ? prev.filter((item) => item !== interest) // Remove if it exists
+        : [...prev, interest] // Add if it doesn't exist
+    );
+  };
 
   return (
     <div>
@@ -71,9 +80,24 @@ export default function Home() {
       </div>
 
       <div className="projects-container">
-        {specialty === "web" && <Web />}
-        {specialty === "embedded" && <Embedded />}
-        {specialty === "cyber" && <Cyber />}
+      {specialty === "web" && (
+          <Web
+            interestsList={interestsList}
+            toggleInterest={toggleInterest}
+          />
+        )}
+        {specialty === "embedded" && (
+          <Embedded
+            interestsList={interestsList}
+            toggleInterest={toggleInterest}
+          />
+        )}
+        {specialty === "cyber" && (
+          <Cyber
+            interestsList={interestsList}
+            toggleInterest={toggleInterest}
+          />
+        )}
       </div>
 
       <Personal />

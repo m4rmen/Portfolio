@@ -1,12 +1,14 @@
 import React from "react";
 
-export default function Web() {
+export default function Web({ interestsList, toggleInterest }) {
+    const isAdded = (interest) => interestsList.includes(interest);
+
   return (
     <div>
         <h1 className="speciality-title">Web Development Experience</h1>
         <div className="experience-container">
             {/*ULTRAPARK*/}
-            <div className="experience-item flex items-start space-x-6">
+            <div className="experience-item">
                 
                 <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
                     <img src="/images/ultrapark-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
@@ -37,10 +39,19 @@ export default function Web() {
                     </li>
                 </ul>
                 </div>
+
+                <div className="experience-footer">
+                    <button onClick={() => toggleInterest("Ultrapark Web Software Developer Intern")}> 
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={isAdded("Ultrapark Web Software Developer Intern") ? "#f6ff00" : "#ffffff"}>
+                            <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/>
+                            </svg>
+                    </button>
+                </div>
+
             </div>
 
             {/*Projet*/}
-            <div className="experience-item flex items-start space-x-6">
+            <div className="experience-item">
                 
                 <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
                     <img src="/images/AltaRobotique-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
@@ -72,11 +83,20 @@ export default function Web() {
                         </li>
                     </ul>
                 </div>
+
+                <div className="experience-footer">
+                    <button onClick={() => toggleInterest("AltaRobotique")}> 
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={isAdded("AltaRobotique") ? "#f6ff00" : "#ffffff"}>
+                            <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/>
+                            </svg>
+                    </button>
+                </div>
+
             </div>
 
 
             {/*Hackathon*/}
-            <div className="experience-item flex items-start space-x-6">
+            <div className="experience-item">
                 
                 <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
                     <img src="/images/PolyHx-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
@@ -85,31 +105,36 @@ export default function Web() {
                 {/* Experience Details */}
                 <div className="experience-details">
                     <h2 className="text-xl font-semibold text-white">
-                        Polytechnique Montréal – Alta Robotique
+                        PolyHacks Hackathon 2024
                     </h2>
                     <p className="italic text-gray-400">
-                        Distributed Systems Developer | January 2025 – May 2025 | Montréal, QC
+                    Fullstack Developer – Participant | February 2024 | Montréal, QC
                     </p>
                     <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
-                        <li>
-                        Developed a web application for managing irrigation integrated with an IoT sensor to optimize the use of water and nutrients in the agricultural sector.
-                        </li>
-                        <li>
-                        Implemented core functionalities, such as sensor connection via WiFi or Bluetooth, data collection and visualization (humidity, pH, nutrients), and reporting.
-                        </li>
-                        <li>
-                        Designed a web interface for farmers to monitor and control their irrigation systems remotely.
-                        </li>
-                        <li>
-                        Utilized Angular for the frontend and NestJS for the backend, along with a NoSQL database (MongoDB) for managing sensor and user data.
-                        </li>
-                        <li>
-                        Collaborated with experts in agritech to address the specific needs of farmers, incorporating technical constraints like solar power for sensors.
-                        </li>
+                    <li>
+                        Designed a web application prototype in 24 hours, enabling users to share compost with garden owners.
+                    </li>
+                    <li>
+                        Collaborated dynamically and effectively within the team, utilizing optimized code management with Git.
+                    </li>
+                    <li>
+                        Leveraged technologies such as Angular, TypeScript, NodeJS, and MongoDB to ensure performance and reliability of the prototype.
+                    </li>
+                    <li>
+                        Achieved 4th place in my first-ever hackathon experience.
+                    </li>
                     </ul>
                 </div>
             </div>
 
+            <div className="experience-footer">
+                <button onClick={() => toggleInterest("Hackathon")}> 
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={isAdded("Hackathon") ? "#f6ff00" : "#ffffff"}>
+                        <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/>
+                        </svg>
+                </button>
+            </div>
+            
 
         </div>
 

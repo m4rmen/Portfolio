@@ -18,6 +18,8 @@
   }
 }
 
+
+
 body {
   color: var(--foreground);
   background: var(--background);
@@ -94,9 +96,22 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
 }
 
+@media (max-width: 760px){
+  .experience-container{
+    margin-left: 4%;
+    margin-right: 4%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    height: 500px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+  }
+}
 
 .experience-container{
   margin-left: 14%;
+  margin-right: 14%;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
@@ -123,6 +138,14 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #2d3748; /* Padding around the thumb */
 }
 
-.experience-item{
+.experience-item {
+  display: grid;
+  grid-template-columns: 1fr 11fr; /* Two columns: 1/4 for the logo, 3/4 for the details */
+  gap: 1.5rem; /* Space between the logo and details */
   margin-bottom: 5%;
 }
+
+
+/* .experience-item{
+  margin-bottom: 5%;
+} */
