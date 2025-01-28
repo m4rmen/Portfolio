@@ -10,7 +10,7 @@ import ContactInfo from "@/components/contact-info";
 
 export default function Home() {
 
-  const [specialty, setSpecialty] = useState("");
+  const [specialty, setSpecialty] = useState("web");
 
   const [interestsList, setInterestsList] = useState([]); // Local interestsList
 

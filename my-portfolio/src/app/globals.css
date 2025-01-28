@@ -55,7 +55,8 @@ body::-webkit-scrollbar-thumb {
   align-items: center;
   padding: 20px 40px;
   background-color: #0a0a0a;
-  border-bottom: 1px solid white;
+  box-shadow: 0 4 10px rgba(255, 255, 255, 0.8);
+  /* border-bottom: 1px solid white; */
 }
 
 
@@ -164,15 +165,19 @@ h2{
   font-weight: bold;
 }
 
+
+ #web-experience{
+  height: 500px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
 .experience-container{
   margin-left: 14%;
   margin-right: 14%;
   display: flex;
   flex-direction: column;
   margin-top: 20px;
-  height: 500px;
-  overflow-y: auto;
-  scroll-behavior: smooth;
 }
 
 .skills-container{
@@ -186,7 +191,29 @@ h2{
   height: 300px;
   overflow-y: auto;
   scroll-behavior: smooth;
+  gap: 20px;
 }
+
+
+.skills-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  border-radius: 10px;
+
+}
+
+.skills-container::-webkit-scrollbar-track {
+  background: #2d3748; /* Track background color */
+  border-radius: 10px;
+
+}
+
+.skills-container::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 2px solid #2d3748; /* Padding around the thumb */
+}
+
+
 
 .skills-container > div {
   width: 23%; /* Four columns evenly spaced */
@@ -202,7 +229,44 @@ h2{
     width: 45%; /* Two columns evenly spaced */
     margin-bottom: 20px; /* Add spacing between rows */
   }
+
+  .courses-container {
+    justify-content: center; /* Center the columns */
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+  }
+
+  .courses-container > div {
+    width: 45%; /* Two columns evenly spaced */
+    margin-bottom: 20px; /* Add spacing between rows */
+  }
+
+  
+
 }
+
+
+.courses-container::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+  border-radius: 10px;
+
+}
+
+.courses-container::-webkit-scrollbar-track {
+  background: #2d3748; /* Track background color */
+  border-radius: 10px;
+
+}
+
+.courses-container::-webkit-scrollbar-thumb {
+  background-color: #4a5568; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the scrollbar thumb */
+  border: 2px solid #2d3748; /* Padding around the thumb */
+}
+
+
 
 
 .experience-container::-webkit-scrollbar {
@@ -251,16 +315,33 @@ h2{
 
 
 .contact-info{
-  margin-top: 20px;
-  border-top: 1px solid white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background-color: #0a0a0a;
+  margin-bottom: 40px;
+  /* margin-top: 20px; */
+  /* border-top: 1px solid white; */
+  /* position: fixed; */
+  /* bottom: 0; */
+  /* width: 100%; */
+  /* background-color: #0a0a0a; */
 }
 
 .contact-title{
   display: flex;
   flex-direction: row;
   gap: 10px;
+}
+
+
+.courses-container{
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.courses-item{
+  width: 30%;
 }

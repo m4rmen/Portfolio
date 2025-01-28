@@ -16,7 +16,6 @@ export default function Web({ interestsList, toggleInterest }) {
                 <p>TypeScript</p>
                 <p>ReactJS</p>
                 <p>Angular</p>
-                <p>VueJS</p>
                 </div>
             </div>
             <div>
@@ -52,7 +51,7 @@ export default function Web({ interestsList, toggleInterest }) {
             </div>
         </div>
         <h1 className="speciality-title">Experience</h1>
-        <div className="experience-container">
+        <div className="experience-container" id="web-experience">
             {/*ULTRAPARK*/}
             <div className="experience-item">
                 

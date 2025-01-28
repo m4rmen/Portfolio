@@ -4,7 +4,41 @@ import React from 'react';
 export default function Embedded({ interestsList, toggleInterest }) {
     return (
         <div>
-            <h1 className="speciality-title">Embedded Development Experience</h1>
+            <h1 className='speciality-title'>Embedded Development Technical Skills</h1>
+            <div className="skills-container">
+                <div>
+                    <h2>Programming Languages</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                        <p>C</p>
+                        <p>C++</p>
+                        <p>Python</p>
+                        <p>Java</p>
+                        <p>Assembly</p>
+                        <p>VHDL</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>Frameworks</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                        <p>ROS 2</p>
+                        <p>OpenCV</p>
+                        <p>PyTorch</p>
+                        <p>Flask</p>
+                    </div>
+                </div>
+                <div>
+                    <h2>APIs</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                        <p>OpenMP</p>
+                        <p>TBB</p>
+                        <p>POSIX</p>
+                        <p>OpenCL</p>
+                        <p>MPI</p>
+                    </div>
+                </div>
+            </div>
+
+            <h1 className="speciality-title">Experience</h1>
             <div className="experience-container">
                 <div className="experience-item flex items-start space-x-6">
                     
@@ -39,6 +73,57 @@ export default function Embedded({ interestsList, toggleInterest }) {
                     </div>
                 </div>
             </div>
+
+
+
+
+            <h1 className="speciality-title">Relevant courses</h1>
+            <div className='courses-container'>
+                <div className='courses-item'>
+                    <h2>Embedded Systems</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                    <p>Design of the software component of an embedded system.</p>
+                    <p>Real-time operating systems.</p>
+                    <p>μC</p>
+                    <p>VHDL</p>
+                    <p>High Level Synthesis (HLS) Pragma</p>
+                    <p>Xilinx Vivado</p>
+
+                    </div>
+                </div>
+                <div className='courses-item'>
+                    <h2>Parallel Computer Systems</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                        <p>Advanced multiprocessor architectures.</p>
+                        <p>Memory hierarchy and cache coherence protocols.</p>
+                        <p>Multithreaded parallelism.</p>
+                        <p>MPI</p>
+                        <p>OpenCL</p>
+                        <p>TBB</p>
+                        <p>OpenMP</p>
+                    </div>
+                </div>
+
+                <div className='courses-item'>
+                    <h2>Microcomputer Architecture</h2>
+                    <div className="mt-4 text-gray-300 space-y-2">
+                        <p>Microcomputer architecture and organization.</p>
+                        <p>Instruction set architecture.</p>
+                        <p>Assembly programming.</p>
+                        <p>Link between assembly language and a high-level programming language.</p>
+                        <p>Microprocessor optimization: pipelining.</p>
+                    </div>
+                </div>
+                <div>
+                </div>
+                <div>
+                </div>
+            </div>
+
+
+
+
+
         </div>
       ); 
 }
