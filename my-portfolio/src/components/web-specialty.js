@@ -5,7 +5,53 @@ export default function Web({ interestsList, toggleInterest }) {
 
   return (
     <div>
-        <h1 className="speciality-title">Web Development Experience</h1>
+        <h1 className="speciality-title">Web Development Technical Skills</h1>
+        <div className="skills-container">
+            <div>
+                <h2>Frontend</h2>
+                <div className="mt-4 text-gray-300 space-y-2">
+                <p>HTML5</p>
+                <p>CSS3</p>
+                <p>JavaScript</p>
+                <p>TypeScript</p>
+                <p>ReactJS</p>
+                <p>Angular</p>
+                <p>VueJS</p>
+                </div>
+            </div>
+            <div>
+                <h2>Backend</h2>
+                <div className="mt-4 text-gray-300 space-y-2">
+                <p>NodeJS</p>
+                <p>ExpressJS</p>
+                <p>NestJS</p>
+                <p>Python</p>
+                <p>Flask</p>
+                </div>
+            </div>
+            <div>
+                <h2>Database</h2>
+                <div className="mt-4 text-gray-300 space-y-2">
+                <p>SQL</p>
+                <p>NoSQL</p>
+                <p>MongoDB</p>
+                <p>MSSQL</p>
+                <p>PostgreSQL</p>
+                </div>
+            </div>
+            <div>
+                <h2>DevOps</h2>
+                <div className="mt-4 text-gray-300 space-y-2">
+                <p>Docker</p>
+                <p>Kubernetes</p>
+                <p>AWS</p>
+                <p>Git</p>
+                <p>GitHub</p>
+                <p>GitLab</p>
+                </div>
+            </div>
+        </div>
+        <h1 className="speciality-title">Experience</h1>
         <div className="experience-container">
             {/*ULTRAPARK*/}
             <div className="experience-item">
@@ -101,7 +147,6 @@ export default function Web({ interestsList, toggleInterest }) {
                 <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
                     <img src="/images/PolyHx-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
                 </div>
-
                 {/* Experience Details */}
                 <div className="experience-details">
                     <h2 className="text-xl font-semibold text-white">
@@ -114,6 +159,7 @@ export default function Web({ interestsList, toggleInterest }) {
                     <li>
                         Designed a web application prototype in 24 hours, enabling users to share compost with garden owners.
                     </li>
+                    
                     <li>
                         Collaborated dynamically and effectively within the team, utilizing optimized code management with Git.
                     </li>

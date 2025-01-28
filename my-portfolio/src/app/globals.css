@@ -159,6 +159,11 @@ body::-webkit-scrollbar-thumb {
   font-weight: bold;
 }
 
+h2{
+  font-size: 1rem;
+  font-weight: bold;
+}
+
 .experience-container{
   margin-left: 14%;
   margin-right: 14%;
@@ -169,6 +174,36 @@ body::-webkit-scrollbar-thumb {
   overflow-y: auto;
   scroll-behavior: smooth;
 }
+
+.skills-container{
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  height: 300px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.skills-container > div {
+  width: 23%; /* Four columns evenly spaced */
+}
+
+
+@media screen and (max-width: 760px) {
+  .skills-container {
+    justify-content: center; /* Center the columns */
+  }
+
+  .skills-container > div {
+    width: 45%; /* Two columns evenly spaced */
+    margin-bottom: 20px; /* Add spacing between rows */
+  }
+}
+
 
 .experience-container::-webkit-scrollbar {
   width: 8px; /* Width of the scrollbar */
@@ -188,9 +223,44 @@ body::-webkit-scrollbar-thumb {
   border: 2px solid #2d3748; /* Padding around the thumb */
 }
 
+.personal-container{
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 760px){
+  .personal-container{
+    margin-bottom: 150px;
+  }
+}
 
 
+.info-container{
+  margin-left: 14%;
+  margin-right: 14%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 
-/* .experience-item{
-  margin-bottom: 5%;
-} */
+
+.contact-info{
+  margin-top: 20px;
+  border-top: 1px solid white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #0a0a0a;
+}
+
+.contact-title{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
