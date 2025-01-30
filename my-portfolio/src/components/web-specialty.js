@@ -99,7 +99,7 @@ export default function Web({ interestsList, toggleInterest }) {
             <div className="experience-item">
                 
                 <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
-                    <img src="static/images/AltaRobotique-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
+                    <img src="static/images/AltaRobotique-Logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
                 </div>
 
                 {/* Experience Details */}
