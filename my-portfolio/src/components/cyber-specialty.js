@@ -5,7 +5,7 @@ export default function Cyber({ interestsList, toggleInterest}) {
     return (
         <div>
             <h1 className="speciality-title">Cybersecurity Technical Skills</h1>
-            <div className="skills-container">
+            <div className="security-skills">
             <div>
                 <h2>Threat analysis</h2>
                 <div className="mt-4 text-gray-300 space-y-2">
