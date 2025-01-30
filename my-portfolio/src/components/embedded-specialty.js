@@ -36,6 +36,7 @@ export default function Embedded({ interestsList, toggleInterest }) {
                         <p>MPI</p>
                     </div>
                 </div>
+                <div className="block lg:hidden"></div>
             </div>
 
             <h1 className="speciality-title">Experience</h1>
