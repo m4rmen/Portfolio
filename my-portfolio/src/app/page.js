@@ -44,7 +44,7 @@ export default function Home() {
       </div>
 
       <div className="intro-container">
-        <img src="/images/profile-pic.jpg" className="profile-pic" ></img>
+        <img src="static/images/profile-pic.jpg" className="profile-pic" ></img>
         <div className="intro-text">
           <h1 className="name">Hi, I'm Alexandre,</h1>
           <p>a Computer Engineer, graduated in May 2025.</p>

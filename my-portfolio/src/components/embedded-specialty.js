@@ -43,7 +43,7 @@ export default function Embedded({ interestsList, toggleInterest }) {
                 <div className="experience-item flex items-start space-x-6">
                     
                     <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
-                        <img src="/images/ros-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
+                        <img src="static/images/ros-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
                     </div>
 
                     <div className="experience-details">
