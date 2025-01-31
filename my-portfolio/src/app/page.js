@@ -12,14 +12,13 @@ export default function Home() {
 
   const [specialty, setSpecialty] = useState("web");
 
-  const [interestsList, setInterestsList] = useState([]); // Local interestsList
+  const [interestsList, setInterestsList] = useState([]); 
 
-  // Function to toggle an interest
   const toggleInterest = (interest) => {
     setInterestsList((prev) =>
       prev.includes(interest)
-        ? prev.filter((item) => item !== interest) // Remove if it exists
-        : [...prev, interest] // Add if it doesn't exist
+        ? prev.filter((item) => item !== interest) 
+        : [...prev, interest] 
     );
   };
 
