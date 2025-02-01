@@ -41,7 +41,7 @@ export default function Embedded({ interestsList, toggleInterest }) {
 
             <h1 className="speciality-title">Experience</h1>
             <div className="experience-container">
-                <div className="experience-item flex items-start space-x-6">
+                <div className="experience-item ">
                     
                     <div className="logo-placeholder w-20 h-20 flex items-center justify-center rounded">
                         <img src="static/images/ros-logo.png" alt="logo" className="w-16 h-16 max-w-none" style={{borderRadius: "8px"}} />
@@ -74,9 +74,6 @@ export default function Embedded({ interestsList, toggleInterest }) {
                     </div>
                 </div>
             </div>
-
-
-
 
             <h1 className="speciality-title">Relevant courses</h1>
             <div className='courses-container'>
@@ -115,16 +112,7 @@ export default function Embedded({ interestsList, toggleInterest }) {
                         <p>Microprocessor optimization: pipelining.</p>
                     </div>
                 </div>
-                <div>
-                </div>
-                <div>
-                </div>
             </div>
-
-
-
-
-
         </div>
       ); 
 }
