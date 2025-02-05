@@ -10,10 +10,14 @@
   },
   "dependencies": {
     "@ant-design/icons": "^5.6.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^6.4.3",
     "antd": "^5.23.3",
     "next": "15.1.6",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "reactjs-popup": "^2.0.6"
   },
   "devDependencies": {
     "postcss": "^8",

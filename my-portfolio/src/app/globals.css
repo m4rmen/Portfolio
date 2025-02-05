@@ -387,3 +387,17 @@ h2{
   margin-top: 20px;
 
 }
+
+.rl-img {
+  width: 100%;      /* Take full width of the container */
+  height: auto;     /* Adjust height automatically to keep aspect ratio */
+  display: block;   /* Remove any extra spacing around the image */
+  border-radius: 4px;
+}
+
+.rl-btn {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+}
