@@ -396,8 +396,22 @@ h2{
 }
 
 .rl-btn {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
   margin-top: 1rem;
   font-size: 1rem;
   font-weight: 600;
   color: #fff;
+}
+
+.rl-btn:hover {
+  cursor: pointer;
+}
+
+.experience-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
