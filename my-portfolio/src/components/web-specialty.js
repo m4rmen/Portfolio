@@ -105,7 +105,8 @@ export default function Web({ interestsList, toggleInterest }) {
                 </ul>
                 </div>
 
-                <div className="experience-footer">
+            </div>
+            <div className="experience-footer">
                     {/* <button onClick={() => toggleInterest("Ultrapark Web Software Developer Intern")}> 
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={isAdded("Ultrapark Web Software Developer Intern") ? "#f6ff00" : "#ffffff"}>
                             <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/>
@@ -128,8 +129,6 @@ export default function Web({ interestsList, toggleInterest }) {
 
 
                 </div>
-
-            </div>
 
 
             {/*Hackathon*/}
@@ -161,7 +160,11 @@ export default function Web({ interestsList, toggleInterest }) {
                     </li>
                     </ul>
                 </div>
-                <div className="experience-footer">
+                
+
+
+            </div>
+            <div className="experience-footer">
                     {/* <button onClick={() => toggleInterest("Ultrapark Web Software Developer Intern")}> 
                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill={isAdded("Ultrapark Web Software Developer Intern") ? "#f6ff00" : "#ffffff"}>
                             <path d="M720-120H280v-520l280-280 50 50q7 7 11.5 19t4.5 23v14l-44 174h258q32 0 56 24t24 56v80q0 7-2 15t-4 15L794-168q-9 20-30 34t-44 14Zm-360-80h360l120-280v-80H480l54-220-174 174v406Zm0-406v406-406Zm-80-34v80H160v360h120v80H80v-520h200Z"/>
@@ -183,7 +186,7 @@ export default function Web({ interestsList, toggleInterest }) {
                             <img src="static/images/terra.gif" alt="r-l" className="rl-img" style={{borderRadius: "4px"}} />
                         </Box>
                     </Modal>
-                    <a href="https://github.com/m4rmen/polyhx2k25" >
+                    <a href="https://github.com/m4rmen/polyhx2k25" target="_blank" rel="noreferrer">
                     <div sx={{color: 'white', textTransform: "capitalize"}} className="rl-btn">
                         <i className="fa fa-github-square"   style={{fontSize: "36px"}}></i>
                         <span style={{minWidth:"100px", marginTop: "6px"}}>
@@ -191,11 +194,16 @@ export default function Web({ interestsList, toggleInterest }) {
                         </span>
                     </div>
                     </a>
+                    <a id="terra-link"  href="https://terra.trizottoserver.freeddns.org/home" target="_blank">
+                        <div className="interact-div" >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-7-.5-14.5T799-507q-5 29-27 48t-52 19h-80q-33 0-56.5-23.5T560-520v-40H400v-80q0-33 23.5-56.5T480-720h40q0-23 12.5-40.5T563-789q-20-5-40.5-8t-42.5-3q-134 0-227 93t-93 227h200q66 0 113 47t47 113v40H400v110q20 5 39.5 7.5T480-160Z"/></svg>
+                            <span>
+                                Interact!
+                            </span>
+                        </div>
+                    </a>
+
                 </div>
-
-
-            </div>
-
 
 
             {/*Projet*/}
