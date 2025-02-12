@@ -143,7 +143,7 @@ export default function Web({ interestsList, toggleInterest }) {
                         PolyHacks Hackathon 2025 | 2nd Place
                     </h2>
                     <p className="italic text-gray-400">
-                    Fullstack Developer – Participant | February 2024 | Montréal, QC
+                    Fullstack Developer – Participant | February 2025 | Montréal, QC
                     </p>
                     <ul className="mt-4 list-disc list-inside text-gray-300 space-y-2">
                     <li>
@@ -260,7 +260,7 @@ export default function Web({ interestsList, toggleInterest }) {
                 {/* Experience Details */}
                 <div className="experience-details">
                     <h2 className="text-xl font-semibold text-white">
-                        PolyHacks Hackathon 2024
+                        PolyHacks Hackathon 2024 | 4th Place
                     </h2>
                     <p className="italic text-gray-400">
                     Fullstack Developer – Participant | February 2024 | Montréal, QC
