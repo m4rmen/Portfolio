@@ -8,12 +8,27 @@ import Cyber from "../components/cyber-specialty";
 import Personal from "@/components/personal";
 import ContactInfo from "@/components/contact-info";
 import { DownOutlined } from "@ant-design/icons";
+import Modal from '@mui/material/Modal';
+import { Box } from "@mui/material";
+
+const style = {
+  position: 'absolute',
+  top: '50%',
+  left: '50%',
+  transform: 'translate(-50%, -50%)',
+  width: '90%',
+  maxWidth: 600, 
+};
+
 
 export default function Home() {
 
   const [specialty, setSpecialty] = useState("web");
 
   const [interestsList, setInterestsList] = useState([]); 
+  const [openPreviewQr, setOpenPreviewQr] = useState(false);
+  const handleOpenPreviewQr = () => setOpenPreviewQr(true);
+  const handleClosePreviewQr = () => setOpenPreviewQr(false);
 
   const [selectedCV, setSelectedCV] = useState("static/CVs/CV_A-Marmen-Web.pdf");
 
@@ -35,19 +50,37 @@ export default function Home() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
       <div className="top-bar">
-        <span> Links: </span>
-        <a
-          href="https://www.linkedin.com/in/alexandre-marmen-a932311a2/"
-          target="_blank"
+        <div className="qr-topbar">
+          <button className="qr-code" onClick={handleOpenPreviewQr}>
+            <svg xmlns="http://www.w3.org/2000/svg" height="36px" viewBox="0 -960 960 960" width="36px" fill="#e8eaed"><path d="M520-120v-80h80v80h-80Zm-80-80v-200h80v200h-80Zm320-120v-160h80v160h-80Zm-80-160v-80h80v80h-80Zm-480 80v-80h80v80h-80Zm-80-80v-80h80v80h-80Zm360-280v-80h80v80h-80ZM180-660h120v-120H180v120Zm-60 60v-240h240v240H120Zm60 420h120v-120H180v120Zm-60 60v-240h240v240H120Zm540-540h120v-120H660v120Zm-60 60v-240h240v240H600Zm80 480v-120h-80v-80h160v120h80v80H680ZM520-400v-80h160v80H520Zm-160 0v-80h-80v-80h240v80h-80v80h-80Zm40-200v-160h80v80h80v80H400Zm-190-90v-60h60v60h-60Zm0 480v-60h60v60h-60Zm480-480v-60h60v60h-60Z"/></svg>
+          </button>
+          
+          <Modal
+              open={openPreviewQr}
+              onClose={handleClosePreviewQr}
+              aria-labelledby="modal-modal-title"
+              aria-describedby="modal-modal-description"
           >
-          <i className="fa fa-linkedin-square" style={{fontSize: "36px"}}></i>
-        </a>
-        <a
-          href="https://github.com/m4rmen"
-          target="_blank"
-        >
-          <i className="fa fa-github-square"   style={{fontSize: "36px"}}></i>
-        </a>
+              <Box sx={style}>
+                  <img src="static/images/qr_code.png" alt="r-l" className="qr-img" />
+              </Box>
+          </Modal>
+        </div>
+        <div className="links-topbar">
+          <span> Links: </span>
+          <a
+            href="https://www.linkedin.com/in/alexandre-marmen-a932311a2/"
+            target="_blank"
+            >
+            <i className="fa fa-linkedin-square" style={{fontSize: "36px"}}></i>
+          </a>
+          <a
+            href="https://github.com/m4rmen"
+            target="_blank"
+          >
+            <i className="fa fa-github-square"   style={{fontSize: "36px"}}></i>
+          </a>
+        </div>
       </div>
 
       <div className="intro-container">

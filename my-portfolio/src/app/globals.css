@@ -7,16 +7,16 @@
 
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ededed;
   }
-}
+} */
 
 
 
@@ -47,15 +47,26 @@ body::-webkit-scrollbar-thumb {
 
 .top-bar {
   position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   top: 0;
   width: 100%;
-  display: flex;
-  justify-content: end;
-  gap: 20px;
-  align-items: center;
   padding: 20px 40px;
   background-color: #0a0a0a;
-  box-shadow: 0 4 10px rgba(255, 255, 255, 0.8);
+}
+
+.qr-topbar{
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.links-topbar{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;  
 }
 
 
@@ -392,10 +403,17 @@ h2{
 }
 
 .rl-img {
-  width: 100%;      /* Take full width of the container */
-  height: auto;     /* Adjust height automatically to keep aspect ratio */
-  display: block;   /* Remove any extra spacing around the image */
+  width: 100%;      
+  height: auto;    
+  display: block;   
   border-radius: 4px;
+}
+
+.qr-img{
+  width: 100%;      
+  height: auto;     
+  display: block;  
+  border-radius: 32px;
 }
 
 .rl-btn {
