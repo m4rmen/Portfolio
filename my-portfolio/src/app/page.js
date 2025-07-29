@@ -114,7 +114,7 @@ export default function Home() {
               autoStart: true,
             }}
             onInit={(typewriter) => {
-              typewriter.typeString('a Computer Engineer, graduated in May 2025.')
+              typewriter.typeString('a Computer Engineer graduate from Polytechnique Montréal.')
               .pauseFor(500)
               .typeString('<br/> This is my portfolio, where you’ll get to know about me and what I can do.')
                .callFunction(() => {
